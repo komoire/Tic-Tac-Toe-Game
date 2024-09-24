@@ -36,7 +36,7 @@ def check_winner():
             messagebox.showinfo("Tic-Tac-Toe", f"{buttons[col]['text']} wins!")
             disable_all_buttons()
 
-    # Check diagonals
+    # Check diagonals.
     if buttons[0]['text'] == buttons[4]['text'] == buttons[8]['text'] != " ":
         buttons[0].config(bg="green")
         buttons[4].config(bg="green")
